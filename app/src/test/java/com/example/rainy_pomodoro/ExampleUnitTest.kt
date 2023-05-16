@@ -1,4 +1,4 @@
-package com.example.rainypomodoro
+package com.example.rainy_pomodoro
 
 import org.junit.Test
 
