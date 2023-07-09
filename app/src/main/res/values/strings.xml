@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">rainy pomodoro</string>
+    <string name="button_description">press</string>
 </resources>

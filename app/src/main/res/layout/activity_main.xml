@@ -23,17 +23,34 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_countdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TIMER CONTENT HERE"
+        tools:text="10:00"
+        android:textSize="70sp"
+        android:textAppearance="@style/ShapeAppearance.Material3.Corner.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:max="500"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout" />
+
     <!--    floating button    -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:contentDescription="@string/button_description"
         android:id="@+id/fab_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,6 +60,7 @@
         app:srcCompat="@drawable/ic_play" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:contentDescription="@string/button_description"
         android:id="@+id/fab_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,7 +71,7 @@
         app:srcCompat="@drawable/ic_pause" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:contentDescription="press"
+        android:contentDescription="@string/button_description"
         android:id="@+id/fab_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
