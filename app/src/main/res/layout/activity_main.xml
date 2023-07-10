@@ -34,19 +34,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ProgressBar
-        android:id="@+id/ProgressBar"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:max="500"
-        android:progress="0"
-        android:progressDrawable="@drawable/circular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appBarLayout" />
 
     <!--    floating button    -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -79,5 +66,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="@dimen/fab_bigger_margin"
         app:srcCompat="@drawable/ic_stop" />
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/circular_progress"
+        style="@style/Widget.MaterialProgressBar.ProgressBar"
+        android:minHeight="360dp"
+        android:minWidth="360dp"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
